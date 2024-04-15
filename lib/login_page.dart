@@ -27,14 +27,14 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(height: 75),
               //Bem vindo Novamente
               Text(
-                'Olá Novamente!',
+                'Bem Vindo!',
                 style: GoogleFonts.bebasNeue(
                   fontSize: 52,
                 ),
                 ),
                 SizedBox(height: 10),
                 Text(
-                'Bem vindo, sentimos\ sua falta!',
+                'Sentimos sua falta!',
                 style: TextStyle(
                   fontSize: 36,
                 ),
@@ -113,13 +113,13 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'Not a Member?',
+                    'Ainda não tem uma conta??',
                     style: TextStyle(
                       fontWeight:FontWeight.bold,
                        ),
                     ),
                     Text(
-                      'Register Now',
+                      'Cadastrar',
                       style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.bold,
