@@ -1,16 +1,12 @@
-# art_class
+## 🎨 Art Class
 
-A new Flutter project.
+Repository for the application developed for the Mobile Development Laboratory class in Flutter.
 
-## Getting Started
+<img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/gabrieldeverdade/LDDM---Projetos" /> <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/gabrieldeverdade/LDDM---Projetos" /> <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/gabrieldeverdade/LDDM---Projetos" /> <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/gabrieldeverdade/LDDM---Projetos" /> <img alt="" src="https://img.shields.io/github/repo-size/gabrieldeverdade/LDDM---Projetos" />
+<hr style="border:2px solid gray">
 
-This project is a starting point for a Flutter application.
+- 📱 App
+- ⌨️ Programs/Algorithms
+<hr style="border:2px solid gray">
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white) ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white) ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
