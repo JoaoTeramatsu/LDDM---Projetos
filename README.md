@@ -3,7 +3,7 @@
 Repository for the application developed for the Mobile Development Laboratory class in Flutter.
 
 <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/gabrieldeverdade/LDDM---Projetos" /> <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/gabrieldeverdade/LDDM---Projetos" /> <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/gabrieldeverdade/LDDM---Projetos" /> <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/gabrieldeverdade/LDDM---Projetos" /> <img alt="" src="https://img.shields.io/github/repo-size/gabrieldeverdade/LDDM---Projetos" />
-
+<hr style="border:2px solid gray">
 
 - 📱 App
 - ⌨️ Programs/Algorithms
