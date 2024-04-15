@@ -1,14 +1,14 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class LandingPage extends StatefulWidget {
+  const LandingPage({Key? key}) : super(key: key);
 
   @override 
-  State<HomePage> createState() => _HomePageState();
+  State<LandingPage> createState() => _LandingPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context){ 
   return Scaffold(
@@ -22,9 +22,7 @@ class _HomePageState extends State<HomePage> {
       },
       items: [
         Icon(Icons.home),
-        Icon(Icons.favorite),
         Icon(Icons.search),
-        Icon(Icons.shopping_cart),
         Icon(Icons.person),
       ],
 

@@ -21,7 +21,7 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(
-                Icons.android,
+                Icons.phone_android,
               size: 100,
               ),
                 SizedBox(height: 75),
@@ -96,7 +96,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   child: Center(
                     child: Text(
-                      'Sign In',
+                      'Entrar',
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
@@ -113,7 +113,7 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'Ainda não tem uma conta??',
+                    'Ainda não tem uma conta?',
                     style: TextStyle(
                       fontWeight:FontWeight.bold,
                        ),
