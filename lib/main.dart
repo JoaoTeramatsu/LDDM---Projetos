@@ -7,7 +7,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 void main() {
   runApp(const MyApp());
 }
-
+//Comentário de Teste
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
