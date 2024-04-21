@@ -1,4 +1,4 @@
-import 'package:art_class/login_page.dart';
+import 'package:art_class/page/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';// Substitua "your_project_name" pelo nome do seu projeto
 
@@ -15,24 +15,6 @@ class _LandingPageState extends State<LandingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[300],
-      bottomNavigationBar: CurvedNavigationBar(
-        backgroundColor: Colors.grey.shade300,
-        color: Colors.deepPurple.shade200,
-        animationDuration: Duration(milliseconds: 300),
-        onTap: (index) {
-          setState(() {
-            _pageIndex = index;
-            _pageController.animateToPage(index,
-                duration: Duration(milliseconds: 300),
-                curve: Curves.easeInOut);
-          });
-        },
-        items: [
-          Icon(Icons.home),
-          Icon(Icons.search),
-          Icon(Icons.person),
-        ],
-      ),
       body: PageView.builder(
         controller: _pageController,
         onPageChanged: (index) {
