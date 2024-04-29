@@ -10,6 +10,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  bool _passwordVisible = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,23 +20,18 @@ class _LoginPageState extends State<LoginPage> {
           child:Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              _buildIcon(),
+                Icon(
+                Icons.phone_android,
+                size: 100,
+              ),
               _buildWelcomeText(),
-              _buildEmailField(),
-              _buildPasswordField(),
+              _buildLoginForm(),
               _buildSignInButton(),
               _buildRegisterRow(),
             ],
           ),
         ),
       ),
-    );
-  }
-
-  Widget _buildIcon() {
-    return Icon(
-      Icons.phone_android,
-      size: 100,
     );
   }
 
@@ -61,21 +57,46 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  Widget _buildEmailField() {
-    return Column(
-      children: [
-        _buildTextField('Email'),
-        SizedBox(height: 10),
-      ],
-    );
-  }
-
-  Widget _buildPasswordField() {
-    return Column(
-      children: [
-        _buildTextField('Senha', obscureText: true),
-        SizedBox(height: 10),
-      ],
+  Widget _buildLoginForm() {
+    return Form(
+      child: Container(
+        padding:
+          const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            TextFormField(
+              decoration: const InputDecoration(
+                prefixIcon: Icon(Icons.person_outline_outlined),
+                labelText: "E-mail",
+                hintText: "E-mail",
+                border: OutlineInputBorder()
+              ),
+            ),
+              const SizedBox(height: 10),
+            TextFormField(
+              obscureText: !_passwordVisible,
+              decoration: InputDecoration(
+                prefixIcon: Icon(Icons.fingerprint),
+                labelText: "Password",
+                hintText: "Password",
+                border: OutlineInputBorder(),
+                suffixIcon: IconButton(
+                  onPressed: () {
+                    setState(() {
+                      _passwordVisible = !_passwordVisible;
+                    });
+                  },
+                  icon: Icon(
+                    _passwordVisible ? Icons.visibility : Icons.visibility_off,
+                  ),
+                ),
+              ),
+            ),
+              const SizedBox(height: 10,)
+          ]
+        )
+      )
     );
   }
 
@@ -90,7 +111,12 @@ class _LoginPageState extends State<LoginPage> {
         ),
         child: Padding(
           padding: const EdgeInsets.only(left: 20.0),
-          child: TextField(
+          child: TextFormField(
+            validator: (value){if (value == null || value.isEmpty){
+              return r'Please enter $hintText';
+            }
+            return null;
+          },
             obscureText: obscureText,
             decoration: InputDecoration(
               border: InputBorder.none,
