@@ -16,6 +16,8 @@ class _HomePageState extends State<HomePage> {
     'post 1',
     'post 2',
     'post 3',
+    'post 4',
+    'post 5',
   ];
 
 final List _stories = [
@@ -24,6 +26,7 @@ final List _stories = [
     'story 3',
     'story 4',
     'story 5',
+    'story 6',
   ];
   @override
  Widget build (BuildContext context) {
