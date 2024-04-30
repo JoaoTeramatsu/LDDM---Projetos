@@ -1,6 +1,7 @@
 import 'package:art_class/page/homepage.dart';
 import 'package:art_class/page/landing_page.dart';
 import 'package:art_class/page/login_page.dart';
+import 'package:art_class/src/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
@@ -9,6 +10,7 @@ void main() {
     home: MainPage(),
   ));
 }
+
 
 class MainPage extends StatefulWidget {
   @override
@@ -34,16 +36,22 @@ class _MainPageState extends State<MainPage> {
       const Icon(Icons.person),
     ];
 
-    return Scaffold(
-      body: screens[index],
-      bottomNavigationBar: CurvedNavigationBar(
-        backgroundColor: Colors.grey.shade300,
-        color: Colors.deepPurple.shade200,
-        animationDuration: const Duration(milliseconds: 300),
-        animationCurve: Curves.easeInOut,
-        onTap: (index) => setState(() => this.index = index),
-        items: items,
-        index: index,
+
+    return MaterialApp(
+      theme: TAppTheme.lightTheme,
+      darkTheme: TAppTheme.darkTheme,
+      themeMode: ThemeMode.light,
+      home: Scaffold(
+        body: screens[index],
+        bottomNavigationBar: CurvedNavigationBar(
+          backgroundColor: Colors.transparent,
+          color: Colors.deepPurple.shade200,
+          animationDuration: const Duration(milliseconds: 300),
+          animationCurve: Curves.easeInOut,
+          onTap: (index) => setState(() => this.index = index),
+          items: items,
+          index: index,
+        ),
       ),
     );
   }
