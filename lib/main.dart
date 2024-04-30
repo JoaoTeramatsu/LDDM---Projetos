@@ -40,7 +40,7 @@ class _MainPageState extends State<MainPage> {
     return MaterialApp(
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
-      themeMode: ThemeMode.dark,
+      themeMode: ThemeMode.light,
       home: Scaffold(
         body: screens[index],
         bottomNavigationBar: CurvedNavigationBar(
