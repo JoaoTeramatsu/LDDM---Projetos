@@ -14,7 +14,8 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      // backgroundColor: Colors.grey[300],
+      // backgroundColor: Colors.white,
       body: SafeArea(
         child:Center(
           child:Column(
@@ -105,8 +106,8 @@ class _LoginPageState extends State<LoginPage> {
       padding:const EdgeInsets.symmetric(horizontal: 25.0 ),
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.grey[200],
-          border: Border.all(color: Colors.white),
+          // color: Colors.grey[200],
+          // border: Border.all(color: Colors.white),
           borderRadius: BorderRadius.circular(12),
         ),
         child: Padding(
@@ -137,11 +138,11 @@ class _LoginPageState extends State<LoginPage> {
           color:  Colors.deepPurple,
           borderRadius: BorderRadius.circular(12),
         ),
-        child: Center(
+        child: const Center(
           child: Text(
             'Entrar',
             style: TextStyle(
-              color: Colors.white,
+              // color: Colors.white,
               fontWeight: FontWeight.bold,
               fontSize: 18,
             ),

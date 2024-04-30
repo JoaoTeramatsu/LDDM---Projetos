@@ -14,7 +14,7 @@ class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      // backgroundColor: Colors.grey[300],
       body: PageView.builder(
         controller: _pageController,
         onPageChanged: (index) {
@@ -29,7 +29,7 @@ class _LandingPageState extends State<LandingPage> {
           } else {
             // Caso contrário, exibe uma página padrão
             return Container(
-              color: Colors.grey.shade300,
+              // color: Colors.grey.shade300,
               child: Center(
                 child: Text('Page ${index + 1}'),
               ),
